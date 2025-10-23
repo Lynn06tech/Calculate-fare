@@ -1,0 +1,25 @@
+/*
+Name:WAMAGATA LYNN NJERI
+Reg.no:CT101/G/26423/25
+Description:calculate fare()
+*/
+
+#include <stdio.h>
+
+// Function to calculate the total fare
+float calculateFare(float distance) {
+    // The fare rate is KSh. 50 per kilometer
+    float fareRate = 50.0;
+    
+    // Calculate the total fare
+    float totalFare = distance * fareRate;
+    
+    // Return the total fare
+    return totalFare;
+}
+int main() {
+    float distance = 10.0;
+    float fare =calculateFare(distance);
+    printf("The total fare for a distance of %.2f km is %.2f KSh.\n", distance, fare);
+    return 0;
+}
